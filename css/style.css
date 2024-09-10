@@ -1,0 +1,83 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	background-color: grey;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	width: fit-content;
+	margin: auto;
+	text-align: center;
+}
+
+div:not(.color-5, .color-6, .color-9) > p {
+	color: black;
+}
+p {
+	color: white;
+}
+
+/*2*/
+div > p {
+	background-color: saddlebrown;
+}
+
+/*102*/
+div#highlight p {
+	background-color: blue;
+}
+
+/*12*/
+div.selected p {
+	background-color: indigo;
+}
+
+/*22*/
+div.item:first-child p {
+	background-color: red;
+}
+
+/*11*/
+[class*="special"] > p {
+	background-color: green;
+}
+
+/*12*/
+div[class$="two"] p {
+	background-color: orange;
+}
+
+/*12*/
+div[class^="color"] > p {
+	background-color: yellow;
+}
+
+/*22*/
+.wrapper > div:first-child p {
+	background-color: red;
+}
+
+/* 32 */
+.wrapper div:nth-of-type(7) + .item p {
+	background-color: black;
+}
+
+/*11*/
+:not(.item) > p {
+	background-color: white;
+}
+
+/*22*/
+div.item:nth-child(6)::after {
+	content: 'Color 7 Violet (pseudo element) Застосовується до тегів p, які знаходяться після 6-го div з класом "item", всі рівні, вага 22';
+	display: block;
+	color: white;
+	background-color: darkviolet;
+}
+/*22*/
+div.item:last-of-type p {
+	background-color: cyan;
+}

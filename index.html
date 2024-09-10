@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Home-work-4</title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="item color-1">
+				<p class>
+					Color 1 Red Застосовується до тегів p, вкладених у перший div, всі
+					рівні, вага 22
+				</p>
+				<p>Color 1.2 Red</p>
+				<div class="sub-item"><p>Color 1.3 Red</p></div>
+			</div>
+			<div class="item color-two">
+				<p>
+					Color 2 Orange Застосовується до тегів p, вкладених у div з останнім
+					класом, що завершується на "two", всі рівні, вага 12
+				</p>
+				<p>Color 2.2 Orange</p>
+				<div class="sub-item"><p>Color 2.3 Orange</p></div>
+			</div>
+			<div class="color-3 item">
+				<p>
+					Color 3 Yellow Застосовується до тегів p, вкладених у div з останнім
+					класом, що починається на "color", нащадки першого рівня, вага 12
+				</p>
+				<p>Color 3.2 Yellow</p>
+				<div class="sub-item">
+					<p>Color 3.3 Yellow Не застосовується, вкладений в інший div</p>
+				</div>
+			</div>
+			<div class="item special color-4">
+				<p>
+					Color 4 Green Застосовується до тегів p, вкладених у div що містить
+					класс з частиною назви "special", нащадки першого рівня, вага 11
+				</p>
+				<p>Color 4.2 Green</p>
+				<div class="sub-item">
+					<p>Color 4.3 Green Не застосовується, вкладений в інший div</p>
+				</div>
+			</div>
+			<div class="item color-5" id="highlight">
+				<p>
+					Color 5 Blue Застосовується до тегів p, вкладених у div з
+					id="highlight", всі рівні, вага 102
+				</p>
+				<p>Color 5.2 Blue</p>
+				<div class="sub-item color-5"><p>Color 5.3 Blue</p></div>
+			</div>
+			<div class="item color-6 selected">
+				<p>
+					Color 6 Indigo Застосовується до тегів p, вкладених у div з класом
+					"selected", всі рівні, вага 12
+				</p>
+				<p>Color 6.2 Indigo</p>
+				<div class="sub-item color-6"><p>Color 6.3 Indigo</p></div>
+			</div>
+			<!--The line below is commented to demonstrate ::after-->
+			<!--<div><p>Color 7 Violet</p></div>-->
+			<div class="not-item color-8">
+				<p>
+					Color 8 White Застосовується до тегів p, вкладених у div без класу
+					"item", всі рівні, вага 11
+				</p>
+				<p>Color 8.2 White</p>
+				<div class="sub-item"><p>Color 8.3 White</p></div>
+			</div>
+			<div class="item color-9">
+				<p>
+					Color 9 Black Застосовується до тегів p, які знаходяться у елементі з
+					класом "item" і перед елементом є ще 7 таких же елементів, всі рівні,
+					вага 32
+				</p>
+				<p>Color 9.2 Black</p>
+				<div class="sub-item color-9"><p>Color 9.3 Black</p></div>
+			</div>
+			<div class="item color-10">
+				<p>
+					Color 10 Cyan Застосовується до тегів p, вкладених в останнього
+					представника div з класом класу "item", всі рівні, вага 22
+				</p>
+				<p>Color 10.2 Cyan</p>
+				<div class="sub-item"><p>Color 10.3 Cyan</p></div>
+			</div>
+		</div>
+	</body>
+</html>
